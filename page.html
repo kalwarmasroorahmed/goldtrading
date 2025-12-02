@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOLD TRADING SIGNALS - Premium Gold Signals</title>
+    <style>
+        /* --- GLOBAL & TYPOGRAPHY --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Dark Theme Background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /*background: #121212; Very dark background */
+            color: #E0E0E0; /* Light text color */
+            overflow-x: hidden;
+            line-height: 1.6;
+            background: url("bg.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .hero-section {
+            padding: 30px 15px;
+            max-width: 100%;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        /* --- CARD STYLING (LOGOS, TEXT, FEATURES) --- */
+        .card-base {
+            background: #1E1E1E; /* Slightly lighter dark card background */
+            border-radius: 25px;
+            padding: 30px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4); /* Darker shadow */
+        }
+        
+        .logo-section {
+            text-align: center;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            background: #ffffff; /* Gold/Yellow background for logo container */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*box-shadow: 0 8px 20px rgba(255, 215, 0, 0.4);*/
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #ffffff; /* Gold color for heading */
+            margin-bottom: 8px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subscribers-badge {
+            display: inline-block;
+            background: #3498db; /* Blue accent color */
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-bottom: 15px;
+        }
+
+        .hero-text {
+            /* Use card-base styling */
+        }
+
+        .hero-text p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 12px;
+            color: #B0B0B0; /* Lighter grey for main text */
+        }
+
+        .hero-text .highlight {
+            color: #FFD700; /* Gold highlight */
+            font-weight: bold;
+        }
+
+        .features-section {
+            /* Use card-base styling */
+        }
+
+        .features-title, .reviews-title {
+            font-size: 22px;
+            color: #FFD700;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 18px;
+            padding: 15px;
+            background: rgba(255, 215, 0, 0.05); /* Light gold accent background */
+            border-radius: 12px;
+            border-left: 4px solid #FFD700; /* Gold border accent */
+        }
+
+        .feature-icon {
+            font-size: 28px;
+            margin-right: 15px;
+            min-width: 35px;
+            color: #3498db; /* Blue icon color */
+        }
+
+        .feature-content h3 {
+            color: #E0E0E0;
+            font-size: 16px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .feature-content p {
+            color: #A0A0A0;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        /* --- REVIEWS STYLING (Image Based) --- */
+        .reviews-section {
+            /* Use card-base styling */
+            padding-bottom: 5px; /* Adjust padding for images */
+        }
+
+        .review-card {
+            margin-bottom: 15px;
+            border-radius: 15px;
+            overflow: hidden; /* To ensure image respects border radius */
+        }
+
+        .review-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* --- CALL TO ACTION --- */
+        .cta-section {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            display: block;
+            background: linear-gradient(135deg, #3498db, #2980b9); /* Bright Blue Gradient */
+            color: white;
+            padding: 8px;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.4);
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+        .cta-button_1 {
+            display: block;
+            background: linear-gradient(135deg, #3498db, #2980b9); /* Bright Blue Gradient */
+            color: white;
+            padding: 18px 40px;
+            font-size: 17px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(52, 152, 219, 0.4);
+            transition: all 0.3s ease;
+            letter-spacing: 1px;
+        }
+
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.5);
+        }
+        .cta-button_1:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(52, 152, 219, 0.5);
+        }
+
+        .telegram-icon {
+            font-size: 20px;
+            margin-right: 8px;
+        }
+
+        /* --- DISCLAIMER --- */
+        .disclaimer {
+            background: #1E1E1E;
+            padding: 20px 18px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            border-left: 4px solid #e74c3c; /* Red border for warning */
+        }
+
+        .disclaimer h4 {
+            color: #e74c3c;
+            margin-bottom: 12px;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .disclaimer p {
+            font-size: 12px;
+            line-height: 1.6;
+            color: #A0A0A0;
+            margin-bottom: 10px;
+        }
+
+        /* --- MEDIA QUERIES --- */
+        @media (min-width: 768px) {
+            .container { max-width: 600px; }
+            h1 { font-size: 32px; }
+            .logo { width: 120px; height: 120px; }
+            .hero-text p, .feature-content p, .disclaimer p { font-size: 16px; }
+            .cta-button { font-size: 19px; }
+        }
+
+        @media (max-width: 360px) {
+            h1 { font-size: 24px; }
+            .logo { width: 85px; height: 85px; }
+            .card-base { padding: 20px 15px; }
+            .cta-button { font-size: 15px; padding: 16px 30px; }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero-section">
+        <div class="container">
+            <div class="logo-section card-base">
+                <div class="logo">
+                    <img src="logO.jpg" alt="Logo" />
+                </div>
+                <h1>GOLD TRADING SIGNALS</h1>
+                <span class="subscribers-badge">🔥 956+ Active Traders</span>
+        
+            <div class="cta-section">
+                <a href="tg://join?invite=+44zyLrLuNgozMDI0" class="cta-button" target="_blank">
+                    <span class="telegram-icon">✈️</span>
+                    JOIN FREE CHANNEL NOW
+                </a>
+            </div>
+            </div>
+
+            
+            <div class="features-section card-base">
+                <h2 class="features-title">What You Get Free</h2>
+                
+                <div class="feature-item">
+                    <span class="feature-icon">💰</span>
+                    <div class="feature-content">
+                        <h3>Daily Gold Signals</h3>
+                        <p>6-7 high quality signals daily with precise entry, TP, and SL levels</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon">📚</span>
+                    <div class="feature-content">
+                        <h3>Free Education</h3>
+                        <p>Professional trading strategies from 7+ years of experience</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon">📊</span>
+                    <div class="feature-content">
+                        <h3>Money Management</h3>
+                        <p>Complete risk management plans to maximize your profits</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <span class="feature-icon">🎯</span>
+                    <div class="feature-content">
+                        <h3>Live Trading Sessions</h3>
+                        <p>Watch professionals execute trades in real-time during US session</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reviews-section card-base">
+                <h2 class="reviews-title">Real Client Profit Proof</h2>
+                
+                <div class="review-card">
+                    <img src="1.jpg" alt="Client Profit Screenshot 1" />
+                </div>
+
+                <div class="review-card">
+                    <img src="2.jpg" alt="Client Profit Screenshot 2" />
+                </div>
+
+                <div class="review-card">
+                    <img src="3.jpg" alt="Client Profit Screenshot 3" />
+                </div>
+
+                <div class="review-card">
+                    <img src="4.jpg" alt="Client Profit Screenshot 4" />
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="tg://join?invite=+44zyLrLuNgozMDI0" class="cta-button" target="_blank">
+                    <span class="telegram-icon">✈️</span>
+                    JOIN FREE CHANNEL NOW
+                </a>
+            </div>
+
+            <div class="disclaimer">
+                <h4>⚠️ DISCLAIMER:</h4>
+                <p>FOREX AND GOLD TRADING IS HIGHLY SPECULATIVE AND RISKY. IT IS ONLY SUITABLE FOR THOSE PEOPLE WHO UNDERSTAND, AND ARE WILLING TO TAKE ON, THE FINANCIAL AND OTHER RISKS INVOLVED.</p>
+                <p>Financial instruments that are traded on leverage carry a high level of risk and you could lose more than your deposits.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
